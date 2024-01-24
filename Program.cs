@@ -27,9 +27,16 @@ while (continueRun)
     Console.WriteLine("Number    Squared    Cubed");
     Console.WriteLine("======    =======    =====");
 
+    // extra challenge #2 (partial solution)
+    string space = "";
+    for (int c = 0; c < userInt.ToString().Length + 10; c++) // 10 accounts for approx. space in columns
+    {
+        space = String.Concat(space, " ");
+    }
+
     for (int i = 0; i <= userInt; i++)
     {
-        Console.WriteLine($"{i}         {getSquare(i)}          {getCube(i)}");
+        Console.WriteLine($"{i}{space}{getSquare(i)}{space}{getCube(i)}");
     }
 
     Console.WriteLine();
