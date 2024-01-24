@@ -20,7 +20,7 @@ while (continueRun)
     {
         userInt = int.Parse(Console.ReadLine());
         if (userInt > 0 && getCube(userInt) <= 2147483647) break; 
-        else Console.WriteLine("Please enter positive integer less than 2147483647");
+        else Console.WriteLine("Invalid input. Please enter positive integer (less than 2,147,483,647)");
     }
 
     Console.WriteLine();
